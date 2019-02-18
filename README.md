@@ -1,14 +1,14 @@
 # PHP Linux File Transfer Interface
 
-This is a useful utility written in PHP, that allows a user to be authenticated through steam and if their steam ID is on the access list they can use this interface. Once they are logged in, they can use this program to transfer a specified file name from one main server to other remote servers, without giving them direct SSH access. Currently .bsp and .txt files are available for transfer, but you can change the file extension at any time.
+This is a useful utility written in PHP, that allows a user to be authenticated through steam and if their steam ID is on the access list they can use this interface. Once they are logged in, they can use this program to transfer a specified file name from one main server to other remote servers, without giving them direct SSH access. Currently .HTML and .PHP files are available for transfer, but you can change the file extension at any time.
 
 ## Getting Started
 
 Instructions:
 * Open index.php and replace the steamid's with the steamid of any user you want to grant access to the interface.
-* Open inc/var.php and add the names of the servers and SSH password to the servers you want to use. (Not fully security, other password methods can be implemented)
+* Open resources/passwordServer1 and passwordServer2, then add the SSH password to the servers you want to use. (Not fully secure, other password methods can be implemented). An htaccess file has been added to the resources folder to block anyone from accessing it besides your server.
 * Change the forms to match the type of files you wish to transfer
-* In the switch statement, add any file extensions you wish to allow for transfer. (By default .bsp will be added to file names entered with no extension.)
+* In the switch statement, add any file extensions you wish to allow for transfer. (By default .html or .php will be added to file names entered with no extension.)
 
 ### Prerequisites
 
